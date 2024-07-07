@@ -32,17 +32,13 @@ module.exports = {
           gender: 'Boy',
           hobby: 'Programming',
           relationship: 'Single😙',
-          facebookLink: ' ',
+          facebookLink: 'https://www.facebook.com/profile.php?id=61556771164358 ',
           bio: 'Nothing bro!'
         };
 
         const videoUrl = 
-["https://i.imgur.com/kSVZkHH.mp4",
-"https://i.imgur.com/Ebj77tA.mp4",
-"https://i.imgur.com/5y3yaQQ.mp4",
-"https://i.imgur.com/kDKmrsw.mp4",
-"https://i.imgur.com/gYGp3WW.mp4",
-"https://i.imgur.com/qqT3YRF.mp4",
+[
+"https://tinyurl.com/27s2p9ju"
  ];
         const tmpFolderPath = path.join(__dirname, 'tmp');
 

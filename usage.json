@@ -1,7 +1,7 @@
 [
   {
     "name": "",
-    "usage": 8
+    "usage": 28
   },
   {
     "name": "cs",
@@ -21,7 +21,7 @@
   },
   {
     "name": "del",
-    "usage": 20
+    "usage": 23
   },
   {
     "name": "copliolt",
@@ -65,7 +65,7 @@
   },
   {
     "name": "clean",
-    "usage": 1
+    "usage": 3
   },
   {
     "name": "write",
@@ -153,7 +153,7 @@
   },
   {
     "name": "$",
-    "usage": 2
+    "usage": 3
   },
   {
     "name": "up",
@@ -193,7 +193,7 @@
   },
   {
     "name": "mocky",
-    "usage": 2
+    "usage": 3
   },
   {
     "name": "u",
@@ -201,7 +201,7 @@
   },
   {
     "name": "unsend",
-    "usage": 3
+    "usage": 7
   },
   {
     "name": "botgc",
@@ -217,7 +217,7 @@
   },
   {
     "name": "help",
-    "usage": 1
+    "usage": 3
   },
   {
     "name": "findgar",
@@ -253,7 +253,7 @@
   },
   {
     "name": "play",
-    "usage": 1
+    "usage": 2
   },
   {
     "name": "acp",
@@ -269,6 +269,62 @@
   },
   {
     "name": "tid",
+    "usage": 1
+  },
+  {
+    "name": "$echi",
+    "usage": 1
+  },
+  {
+    "name": "$$",
+    "usage": 1
+  },
+  {
+    "name": "sing",
+    "usage": 3
+  },
+  {
+    "name": "r",
+    "usage": 1
+  },
+  {
+    "name": "mangadex",
+    "usage": 1
+  },
+  {
+    "name": "pair",
+    "usage": 46
+  },
+  {
+    "name": "impress",
+    "usage": 5
+  },
+  {
+    "name": "iimpress",
+    "usage": 1
+  },
+  {
+    "name": "pairv2",
+    "usage": 1
+  },
+  {
+    "name": "pair-pair",
+    "usage": 1
+  },
+  {
+    "name": "tinyurl",
+    "usage": 3
+  },
+  {
+    "name": "spy",
+    "usage": 1
+  },
+  {
+    "name": "prefix",
+    "usage": 1
+  },
+  {
+    "name": "offbot",
     "usage": 1
   }
 ]
