@@ -34,5 +34,8 @@
     "logsbot": {
       "allow": true
     }
-  }
+  },
+  "commandUnload": [
+    "edit.js"
+  ]
 }

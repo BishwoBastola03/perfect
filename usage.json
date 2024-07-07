@@ -1,0 +1,274 @@
+[
+  {
+    "name": "",
+    "usage": 8
+  },
+  {
+    "name": "cs",
+    "usage": 13
+  },
+  {
+    "name": "monitor",
+    "usage": 1
+  },
+  {
+    "name": "animesong",
+    "usage": 1
+  },
+  {
+    "name": "claude",
+    "usage": 1
+  },
+  {
+    "name": "del",
+    "usage": 20
+  },
+  {
+    "name": "copliolt",
+    "usage": 1
+  },
+  {
+    "name": "copilot",
+    "usage": 1
+  },
+  {
+    "name": "aot",
+    "usage": 1
+  },
+  {
+    "name": "pretend",
+    "usage": 2
+  },
+  {
+    "name": "liner",
+    "usage": 2
+  },
+  {
+    "name": "imagine",
+    "usage": 2
+  },
+  {
+    "name": "xl",
+    "usage": 3
+  },
+  {
+    "name": "sjv",
+    "usage": 1
+  },
+  {
+    "name": "ascart",
+    "usage": 1
+  },
+  {
+    "name": "bg",
+    "usage": 2
+  },
+  {
+    "name": "clean",
+    "usage": 1
+  },
+  {
+    "name": "write",
+    "usage": 1
+  },
+  {
+    "name": "vdoedit",
+    "usage": 1
+  },
+  {
+    "name": "edit",
+    "usage": 1
+  },
+  {
+    "name": "meina",
+    "usage": 2
+  },
+  {
+    "name": "darksushi",
+    "usage": 1
+  },
+  {
+    "name": "creative",
+    "usage": 1
+  },
+  {
+    "name": "ani",
+    "usage": 1
+  },
+  {
+    "name": "cetus",
+    "usage": 1
+  },
+  {
+    "name": "logo",
+    "usage": 1
+  },
+  {
+    "name": "sticker",
+    "usage": 1
+  },
+  {
+    "name": "animetime",
+    "usage": 1
+  },
+  {
+    "name": "prodia",
+    "usage": 3
+  },
+  {
+    "name": "search",
+    "usage": 1
+  },
+  {
+    "name": "circle",
+    "usage": 3
+  },
+  {
+    "name": "geeta",
+    "usage": 3
+  },
+  {
+    "name": "p",
+    "usage": 1
+  },
+  {
+    "name": "i2tov2",
+    "usage": 1
+  },
+  {
+    "name": "i2v2",
+    "usage": 1
+  },
+  {
+    "name": "cnd",
+    "usage": 1
+  },
+  {
+    "name": "listallcmd",
+    "usage": 2
+  },
+  {
+    "name": "$cat",
+    "usage": 1
+  },
+  {
+    "name": "$",
+    "usage": 2
+  },
+  {
+    "name": "up",
+    "usage": 1
+  },
+  {
+    "name": "uptime",
+    "usage": 1
+  },
+  {
+    "name": "rv",
+    "usage": 2
+  },
+  {
+    "name": "randompic",
+    "usage": 1
+  },
+  {
+    "name": "guessnumber",
+    "usage": 1
+  },
+  {
+    "name": "htv",
+    "usage": 2
+  },
+  {
+    "name": "setwelcome",
+    "usage": 2
+  },
+  {
+    "name": "botnick",
+    "usage": 1
+  },
+  {
+    "name": "setleave",
+    "usage": 2
+  },
+  {
+    "name": "mocky",
+    "usage": 2
+  },
+  {
+    "name": "u",
+    "usage": 1
+  },
+  {
+    "name": "unsend",
+    "usage": 3
+  },
+  {
+    "name": "botgc",
+    "usage": 1
+  },
+  {
+    "name": "botstats",
+    "usage": 1
+  },
+  {
+    "name": "botstat",
+    "usage": 1
+  },
+  {
+    "name": "help",
+    "usage": 1
+  },
+  {
+    "name": "findgar",
+    "usage": 1
+  },
+  {
+    "name": "findgay",
+    "usage": 1
+  },
+  {
+    "name": "gayfinder",
+    "usage": 3
+  },
+  {
+    "name": "eval\nevent.threadid,",
+    "usage": 1
+  },
+  {
+    "name": "eval\n\n\nevent.threadid,",
+    "usage": 1
+  },
+  {
+    "name": "approved",
+    "usage": 1
+  },
+  {
+    "name": "animagine",
+    "usage": 1
+  },
+  {
+    "name": "sdxl",
+    "usage": 1
+  },
+  {
+    "name": "play",
+    "usage": 1
+  },
+  {
+    "name": "acp",
+    "usage": 1
+  },
+  {
+    "name": "pending",
+    "usage": 1
+  },
+  {
+    "name": "shell",
+    "usage": 4
+  },
+  {
+    "name": "tid",
+    "usage": 1
+  }
+]
