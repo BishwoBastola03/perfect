@@ -1,39 +1,48 @@
-module.exports.config = {
+module.exports = {
+  config: {
     name: "antiout",
-    eventType: ["log:unsubscribe"],
-    version: "1.0.7",
-    credits: "ProCoderMew",
-    description: "Listen events",
-    dependencies: {
-        "path": ""
+    version: "1.0",
+    author: "AceGun",
+    countDown: 0,
+    role: 2,
+    shortDescription: "Enable or disable antiout",
+    longDescription: "",
+    category: "box chat",
+    guide: "{pn} {{[on | off]}}",
+    envConfig: {
+      deltaNext: 5
     }
-};
+  },
+  onStart: async function({ message, event, threadsData, args }) {
+    let antiout = await threadsData.get(event.threadID, "settings.antiout");
+    if (antiout === undefined) {
+      await threadsData.set(event.threadID, true, "settings.antiout");
+      antiout = true;
+    }
+    if (!["on", "off"].includes(args[0])) {
+      return message.reply("Please use 'on' or 'off' as an argument");
+    }
+    await threadsData.set(event.threadID, args[0] === "on", "settings.antiout");
+    return message.reply(`Antiout has been ${args[0] === "on" ? "enabled" : "disabled"}.`);
+  },
+  onEvent: async function({ api, event, threadsData }) {
+    const antiout = await threadsData.get(event.threadID, "settings.antiout");
+    if (antiout && event.logMessageData && event.logMessageData.leftParticipantFbId) {
+      // A user has left the chat, get their user ID
+      const userId = event.logMessageData.leftParticipantFbId;
 
-module.exports.run = async function ({ api, event, Users }) {
-    const { resolve } = global.nodemodule["path"];
-    const path = resolve(__dirname, '../commands', 'data', 'antiout.json');
-    const { antiout } = require(path);
-    const { logMessageData, author, threadID } = event;
-    const id = logMessageData.leftParticipantFbId;
-  const moment = require("moment-timezone");
-     var timeNow = moment.tz("Asia/Ho_Chi_Minh").format("HH:mm:ss")
-  var fullYear = global.client.getTime("fullYear");
-    if (author == id && id != api.getCurrentUserID()) {
-        const name = await Users.getNameUser(id) || "Người dùng Facebook";
-        if (antiout.hasOwnProperty(threadID) && antiout[threadID] == true) {
-    try {
-    await api.addUserToGroup(id, threadID);
- return api.sendMessage(`[ ANTIOUT ]\n────────────────────\n⚠️ Kích hoạt chế độ tự động thêm người dùng khi tự động rời nhóm\n🔰 Trạng thái: Thành công\n👤 Người dùng: ${name}\n⏰ Thời gian: ${timeNow} - ${fullYear}\n────────────────────\n⛔ Nếu bot thêm thất bại có thể người dùng đã chặn bot`, event.threadID, async (err, info) => {
-   await new Promise(resolve => setTimeout(resolve, 60 * 1000));
- return api.unsendMessage(info.messageID);
-          }, event.messageID);
-      } catch (e) {
- return api.sendMessage(`[ ANTIOUT ]\n────────────────────\n⚠️ Kích hoạt chế độ tự động thêm người dùng khi tự động rời nhóm\n🔰 Trạng thái: Thất bại\n👤 Người dùng: ${name}\n⏰ Thời gian: ${timeNow} - ${fullYear}\n────────────────────\n⛔ Nếu bot thêm thất bại có thể người dùng đã chặn bot`, event.threadID, async (err, info) => {
-   await new Promise(resolve => setTimeout(resolve, 60 * 1000));
- return api.unsendMessage(info.messageID);
-               }, event.messageID); 
-            }
+      // Check if the user is still in the chat
+      const threadInfo = await api.getThreadInfo(event.threadID);
+      const userIndex = threadInfo.participantIDs.indexOf(userId);
+      if (userIndex === -1) {
+        // The user is not in the chat, add them back
+        const addUser = await api.addUserToGroup(userId, event.threadID);
+        if (addUser) {
+          console.log(`Active antiout mode, ${userId} has been re-added to the group!`);
+        } else {
+          console.log(`> Unable to re-add members ${userId} to the group.`);
         }
+      }
     }
-    return;
-}
+  }
+};
